@@ -1,0 +1,97 @@
+<! -- HTML -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+        <link rel = "stylesheet" href="student.css">
+    </head>
+    
+    <body>
+        
+        <div id = "background">
+        
+            <div class = "survey">
+                
+                <table  height = "600" border = "2" cellspacing = "0">
+                    <!--第1行-->
+                    <col width="90">
+                    <col width="780">
+                    <tr>
+                        <td>Student Info</td>
+                        <td>
+                            <form action = "/newstudent" method = "post" >
+                                <p>First Name:<input type = "text" placeholder = "Enter" name="firstname"/> </p>
+                                <p>Last Name:<input type = "text" placeholder = "Enter" name = "lastname"/> </p>
+                                <p>
+                                    <input type = "radio" name = "sex" checked = "checked" class="gender" value = "Male"/>Male
+                                    <input class="gender" type = "radio" name = "sex" value = "Female"/>Female
+                                    </p>
+                                    <p>Date of Birth: <input type = "text" placeholder = "MM" size = "5" name="month"/> <input type = "text" placeholder = "DD"size = "5" name="date"/> <input type = "text" placeholder = "YYYY"size = "5" name="year"/>
+                                    </p>
+                                    <p>Age: <input type = "text" placeholder = "Enter" name="age"/></p>
+                                    <br>
+                                    <input type = "submit" value = "Submit" />
+                                    <br>
+                                   
+                                    </br>
+                            </form>
+                            
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                    
+                        <td>Search Student</td>
+                        <td>
+                            <form action = "/db" method = "post">
+                                <input type = "text" placeholder = "Enter StudentID" name = "studentid"/>
+                                <input type = "submit" value = "Search"/>
+                            </form>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Update Student</td>
+                        <td>
+                            <form action = "/update" method = "post">
+                                <input type = "text" placeholder = "Enter StudentID" name = "studentid"/>
+                            
+                                <br>
+                            
+                                <p>First Name: <input type = "text" placeholder = "Enter First name"     name = "firstname"/></p>
+                                <p>Last Name: <input type = "text" placeholder = "Enter Last name" name = "lastname"/></p>
+                                <p>
+                                
+                                <input type = "radio" name = "sex" checked = "checked" class="gender" value = "Male"/>Male
+                                <input class="gender" type = "radio" name = "sex" value = "Female"/>Female
+                                </p>
+                                
+                                
+                                
+                                <p>Date of Birth: <input type = "text" placeholder = "MM" size = "5" name="month"/> <input type = "text" placeholder = "DD"size = "5" name="date"/> <input type = "text" placeholder = "YYYY"size = "5" name="year"/></p>
+                                <p>Age: <input type = "text" placeholder = "Enter" name="age"/></p>
+                                <input type = "submit" value = "Update"/>
+                            </form>
+                        </td>
+                    <tr>
+                        <td>Delete Student</td>
+                        <td>
+                            <form action = "/delete" method = "post">
+                                <input type = "text" placeholder = "Enter StudentID" name = "studentid"/>
+                                <input type = "submit" value = "Delete"/>
+                            </form>
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+            
+            </div>
+        
+        </div>
+    </body>
+</html>
+        

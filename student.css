@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#background{
+    background:green ;
+    margin:0 auto;
+    height:800px;
+    width:999px;
+}
+
+#background .survey{
+    background:white;
+    height:600px;
+    width:780px;
+    margin: 0 auto;
+}
+
+#background .survey p{
+    margin-left:5px;
+}
